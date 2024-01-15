@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NotitiesApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".UpdateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddActivity"
+            android:exported="false"
+            android:label="@string/title_activity_add"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.NotitiesApplication" />
+        <activity
+            android:name=".ui.theme.MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.NotitiesApplication" />
+        <activity
+            android:name=".ui.theme.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/Theme.NotitiesApplication" />
+        <activity
+            android:name=".activity_main"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.NotitiesApplication" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Book Library">
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.view" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
